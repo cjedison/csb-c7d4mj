@@ -1,0 +1,531 @@
+/* GENERAL */
+
+/*
+#E0922B
+#945500
+#31A2E0
+#52C1FF
+#327194
+*/
+
+.nav a,
+#myLinks a {
+  font-size: 22px;
+  color: #439dce;
+  margin: auto;
+}
+
+.about-us-card-header {
+  font-size: 40px;
+}
+
+.fill {
+  color: white;
+  height: 60px;
+}
+
+/* PHONE NAVIGATION */
+
+.nav-menu {
+  width: 80px;
+  height: 100%;
+  border-radius: 0px;
+  background: #327194;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 104px;
+  background: white;
+  flex-direction: row;
+  border-bottom: 2px solid rgb(165, 165, 165);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  flex-direction: column;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  width: 25px;
+}
+
+.nav .icon {
+  color: #4292bd;
+  display: block;
+  align-self: center;
+  width: 20px;
+  margin-top: 22px;
+  margin-left: 11px;
+  left: 0;
+}
+
+.active {
+  background-color: #4292bd;
+  border-radius: 10px;
+  color: white;
+}
+
+#myLinks {
+  width: 100%;
+  position: sticky;
+  top: 100px;
+  flex-direction: column;
+  color: #4292bd;
+  background: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  overflow: hidden;
+  left: 0;
+  z-index: 3;
+  border-bottom: 2px solid rgb(165, 165, 165);
+}
+
+#myLinks a {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-logo {
+  width: 85px;
+  display: block;
+  object-position: 0px 100px;
+}
+
+.desktop-logo {
+  display: none;
+  object-position: 0px 100px;
+}
+
+.mobile-nav-icon {
+  margin-top: 8px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1000px) {
+  .logo-div {
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+  }
+}
+
+/* COMPUTER NAVIGATION */
+
+@media (min-width: 1000px) {
+  .desktop-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+  }
+
+  .logo-div {
+    width: 30%;
+  }
+
+  .nav {
+    height: 124px;
+  }
+
+  .desktop-logo {
+    width: 110px;
+    height: 110px;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .mobile-nav-menu-div {
+    display: none;
+  }
+}
+
+.logo {
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* FOOTER NAV */
+
+/* PAGES */
+
+/* HOME */
+
+.frame {
+  border: 4px #44c00a double;
+  border-radius: 15px;
+}
+
+.palmb,
+.palmb-1,
+.palmb-2,
+.palmb-3,
+.palmb-4,
+.palmb-5 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+}
+
+.palmb-1 {
+  background-image: url("/img/backgrounds/palm-background-horizontal-1.png");
+}
+
+.palmb-2 {
+  background-image: url("/img/backgrounds/palm-background-top-right.png");
+}
+
+.palmb-3 {
+  background-image: url("/img/backgrounds/palm-background-bottom-left.png");
+}
+
+.palmb-4 {
+  background-image: url("/img/backgrounds/palm-background-vertical.png");
+}
+
+.palmb-5 {
+  background-image: url("/img/backgrounds/palm-background-horizontal-2.png");
+}
+
+.home-page {
+  margin-top: 40px;
+}
+
+.home-card {
+  background-image: url("/img/backgrounds/palm-background-bottom-left.png");
+}
+
+@media (min-width: 1200px) {
+  .home-card {
+    background-image: url("/img/backgrounds/palm-background-top-right.png");
+  }
+}
+
+/* .home-page,
+.contact {
+  opacity: 1;
+}
+
+@media (pointer: fine) {
+  .home-page,
+  .contact {
+    opacity: 0;
+    transition: 0.5s;
+  }
+} */
+/* 
+.palm-leaf-top {
+  object-fit: cover;
+  z-index: 1;
+  width: 30%;
+  align-items: flex-end;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 10;
+  top: 33%;
+  right: 9%;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+.palm-leaf-bottom {
+  object-fit: cover;
+  z-index: 1;
+  width: 30%;
+  align-items: flex-end;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 10;
+  top: 548px;
+  left: 8.9%;
+  border-radius: 20px;
+  opacity: 0.7;
+  transform: rotate(180deg);
+} */
+
+.img-home {
+  width: 100%;
+  top: 74;
+  height: 340px;
+  object-fit: cover;
+  object-position: 0px 15%;
+  border-radius: 15px;
+}
+
+@media (min-width: 800px) {
+  .img-home {
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-home {
+    max-width: 700px;
+  }
+}
+
+.img-center {
+  object-position: center;
+  object-fit: cover;
+}
+
+.about-us-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+  text-align: justify;
+}
+
+.about-us-div p {
+  padding: 15px;
+}
+
+.about-us-div {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .about-us-wrapper {
+    flex-direction: row;
+    width: 85%;
+    margin: auto;
+  }
+  .about-us-div {
+    width: 45%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us-wrapper {
+    width: 80%;
+  }
+}
+
+.hours {
+  border-bottom: solid 3px#ff9914;
+}
+
+.menu-card {
+  width: 50%;
+}
+
+@media (max-width: 900px) {
+  .menu-card {
+    width: 100%;
+  }
+}
+
+.rotate-1 {
+  transform: rotate(-45deg);
+}
+
+.rotate-2 {
+  transform: rotate(45deg);
+}
+
+#products,
+#packaged-ice-cream-flavors {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+#ice-cream-flavors,
+#vegan-ice-cream-flavors,
+#packaged-ice-cream-flavors,
+#shaved-ice-flavors,
+#drink-flavors,
+#products,
+#trending-ice-cream,
+#trending-shaved-ice {
+  margin-top: -40px;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #ice-cream-flavors,
+  #vegan-ice-cream-flavors,
+  #packaged-ice-cream-flavors,
+  #shaved-ice-flavors,
+  #drink-flavors,
+  #products,
+  #trending-ice-cream,
+  #trending-shaved-ice {
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
+  .two-row {
+    width: 100%;
+  }
+  .product-card {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 600px) {
+  #ice-cream-flavors,
+  #vegan-ice-cream-flavors,
+  #packaged-ice-cream-flavors,
+  #shaved-ice-flavors,
+  #drink-flavors,
+  #products,
+  #trending-ice-cream,
+  #trending-shaved-ice {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: none;
+  }
+  .two-row {
+    width: 100%;
+  }
+  .product-card {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .two-product-card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .two-row {
+    width: 90%;
+  }
+  .product-card {
+    width: 33%;
+  }
+  .two-product-card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .two-row {
+    width: 70%;
+  }
+  .product-card {
+    width: 25%;
+  }
+  .two-product-card {
+    width: 50%;
+  }
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.img-product {
+  width: 90%;
+  object-position: 0px 0px;
+}
+
+.product-name,
+.product-price {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  width: 100%;
+  margin-top: 10px;
+  color: #2e90c5;
+}
+
+.toggle-icecream,
+.toggle-vegan,
+.toggle-shaved,
+.toggle-drink,
+.toggle-packaged {
+  transition: 0.5s;
+}
+
+.ice-cream-desc,
+.vegan-desc,
+.shaved-desc,
+.drink-desc,
+.packaged-desc {
+  display: none;
+}
+
+.footer {
+  border-top: 4px solid #0e3d57;
+  background: #155b81;
+  color: white;
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  bottom: 0;
+}
+
+.loader-wrapper {
+  column-gap: 10px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  transition: 0.7s;
+}

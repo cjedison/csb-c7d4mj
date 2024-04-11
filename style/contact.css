@@ -1,0 +1,87 @@
+.contact {
+  width: 80%;
+  height: 90vh;
+  margin: auto;
+  margin-top: 20px;
+  color: #619dfd;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .contact {
+    width: 90%;
+  }
+}
+
+.contact-container {
+  width: 100%;
+  margin-top: -40px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.name-input,
+.email-input,
+.subject-input,
+.message-input {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-bottom: solid 4px #4292bd;
+  color: #4fa826;
+  /* color: #4d9b29; */
+  letter-spacing: 0.4px;
+  outline: none;
+  font-size: 20px;
+  cursor: text;
+  text-overflow: ellipsis;
+  height: 40px;
+  text-decoration: none;
+  margin-top: 50px;
+  width: 100%;
+  text-shadow: none;
+  background: none;
+}
+
+::placeholder {
+  color: #4fa826;
+}
+
+@media (min-width: 950px) {
+  .name-input,
+  .email-input {
+    width: 48%;
+  }
+  .email-input {
+    margin-left: 4%;
+  }
+}
+
+@media (max-width: 950px) {
+  .contact-wrapper {
+    display: block;
+  }
+}
+
+.contact-button {
+  font-family: "Rubik", sans-serif;
+  height: 42px;
+  background: #ff9914;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-top: 65px;
+  padding: 10px;
+  font-size: 17px;
+  transition: 0.2s;
+}
+
+.contact-button:hover {
+  font-size: 17.5px;
+  cursor: pointer;
+}

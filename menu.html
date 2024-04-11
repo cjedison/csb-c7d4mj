@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ohana Ice & Treats</title>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <script src="/script/script.js" defer></script>
+    <script src="/script/products.js" defer></script>
+    <script src="/script/trending.js" defer></script>
+    <script src="/script/menu.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/contact.css" />
+    <link rel="stylesheet" href="/style/general.css" />
+    <link rel="stylesheet" href="/style/cst.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="nosel">
+    <!-- NAV -->
+
+    <div class="nav">
+      <div class="mobile-nav-menu-div">
+        <a
+          href="javascript:void(0);"
+          class="icon mobile-menu"
+          onclick="navFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <div class="nav-wrapper">
+        <div class="center logo-div">
+          <a href="index.html"
+            ><img src="img/logo.jpg" class="mobile-logo"
+          /></a>
+          <a href="index.html"
+            ><img src="img/logo.jpg" class="desktop-logo"
+          /></a>
+        </div>
+        <div class="desktop-nav">
+          <a href="index.html">HOME</a>
+          <a href="menu.html">MENU</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="schedule.html">SCHEDULE</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV LINKS -->
+
+    <div id="myLinks">
+      <a href="index.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="schedule.html">SCHEDULE</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+
+    <img class="background" src="/img/backgrounds/site-background-faded.jpg" />
+
+    <div class="home-page shadow">
+        <h2>=== Menu ===</h2>
+      <div class="pd20 colrow frame palmb-5 w70 align auto2">
+        <div
+          class="product-card auto center toggle-icecream"
+          onclick="toggleIceCream()"
+        >
+          <div class="product-img w60 auto">
+           
+              <img
+              class="img-product"
+              src="img/icecream-flavors/strawberry-cheesecake/strawberry-cheesecake-6.png"
+            />
+        
+          </div>
+        </div>
+
+        <div class="column menu-card mt0 space">
+          <h2 class="mt10 fs34 auto">Ice Cream Flavors</h2>
+          <h2 class="mt10 fs24 auto">
+            Choose from our wide selection of over 30 premium flavors of ice
+            cream!
+          </h2>
+          <button class="contact-button mt-50 auto" onclick="toggleIceCream()">
+            View All Options
+          </button>
+        </div>
+      </div>
+      <h2 class="orange mt30 fs28 ice-cream-desc">
+        Mix and match flavors to your liking!
+      </h2>
+
+      <div id="ice-cream-flavors"></div>
+      <button class="contact-button mt50 auto3 icecream-toggle" style="display: none;" onclick="toggleIceCream()">Close Ice Cream Options</button>
+      <div class="fill mt30 mb-30">.</div>
+      <div class="pd20 colrow frame palmb-1 w70 align auto2">
+        <div
+          class="product-card auto center toggle-vegan"
+          onclick="toggleVegan()"
+        >
+          <div class="product-img w60 auto">
+            <img
+              class="img-product"
+              src="img/icecream-flavors/cookie-dough-chip/cookie-dough-chip-6.png"
+            />
+          </div>
+        </div>
+        <div class="column menu-card">
+          <h2 class="mt10 fs34 auto">Vegan Ice Cream Flavors</h2>
+          <h2 class="mt10 fs24 auto">
+            We offer 5 tasty vegan alternatives that you can pick from!
+          </h2>
+          <button class="contact-button mt-50 auto" onclick="toggleVegan()"">
+            View All Options
+          </button>
+        </div>
+      </div>
+
+      <h2 class="orange mt30 fs28 vegan-desc">
+        Mix and match flavors to your liking!
+      </h2>
+
+      <div id="vegan-ice-cream-flavors"></div>
+      <button class="contact-button mt50 auto3 vegan-toggle" style="display: none;" onclick="toggleVegan()">Close Vegan Options</button>
+      <div class="fill mt30 mb-30">.</div>
+
+      <div class="pd20 colrow frame palmb-5 w70 align auto2">
+        <div
+          class="product-card auto center toggle-shaved"
+          onclick="toggleShaved()"
+        >
+          <div class="product-img w100 auto">
+            <img
+              class="img-product"
+              src="img/shaved-ice-flavors/plain/plain-3.png"
+            />
+          </div>
+        </div>
+        <div class="column menu-card">
+          <h2 class="mt10 fs34 auto">Shaved Ice Flavors</h2>
+          <h2 class="mt10 fs24 auto">
+            Experiment with different flavors and combos from our wide selection of 28.
+          </h2>
+          <button class="contact-button mt-50 auto " onclick="toggleShaved()">
+            View All Options
+          </button>
+        </div>
+      </div>
+
+      <h2 class="orange mt30 fs28 shaved-desc">Choose up to 3 flavors!</h2>
+
+      <div id="shaved-ice-flavors"></div>
+      <button class="contact-button mt50 auto3 shaved-toggle" style="display: none;" onclick="toggleShaved()">Close Shaved Ice Options</button>
+      <div class="fill mt30 mb-30">.</div>
+
+      <div class="pd20 colrow frame palmb-1 w70 align auto2">
+        <div
+          class="product-card auto center toggle-drink"
+          onclick="toggleDrinks()"
+        >
+          <div class="product-img w100 auto">
+            <img
+              class="img-product"
+              src="img/drink-flavors/strawberry/strawberry-smoothie-2.png"
+            />
+          </div>
+        </div>
+        <div class="column menu-card">
+          <h2 class="mt10 fs34 auto">Drink Options</h2>
+          <h2 class="mt10 fs24 auto">
+          Take your pick at one of our drink flavors! Our smoothies are dairy and sugar free!
+          </h2>
+          <button class="contact-button mt-50 auto" onclick="toggleDrinks()">
+            View All Options
+          </button>
+        </div>
+      </div>
+
+      <h2 class="orange mt30 fs28 drink-desc">
+        Mix and match flavors to your liking!
+      </h2>
+
+      <div id="drink-flavors"></div>
+      <button class="contact-button mt50 auto3 drink-toggle" style="display: none;" onclick="toggleDrinks()">Close Drink Options</button>
+      <div class="fill mt30 mb-30">.</div>
+
+      <div class="pd20 colrow frame palmb-5 w70 align auto2">
+        <div
+          class="product-card auto center toggle-packaged"
+          onclick="togglePackaged()"
+        >
+          <div class="product-img w100 auto">
+            <img
+              class="img-product mt40"
+              src="https://www.hersheyicecream.com/wp-content/uploads/2022/02/round-cake-info.png"
+            />
+          </div>
+        </div>
+        <div class="column menu-card">
+          <h2 class="mt10 fs34 auto">Packaged Ice Cream</h2>
+          <h2 class="mt10 fs24 auto">
+            Want something to take home? Feel free to take a look at our packaged items!
+          </h2>
+          <button class="contact-button mt-50 auto" onclick="togglePackaged()">
+            View All Options
+          </button>
+        </div>
+      </div>
+      <h2 class="orange mt50 fs28 packaged-desc mb100">
+        Enjoy a treat to go!
+      </h2>
+
+      <div id="packaged-ice-cream-flavors"></div>
+      <button class="contact-button mt50 auto2 packaged-toggle" style="display: none;" onclick="togglePackaged()">Close Packaged Options</button>
+    </div>
+
+    <footer>
+        <div class="footer wrapper w100 center mt50 align2">
+          <div class="wrapper colrow w50 auto space">
+              <div class="wrapper column pd20 auto2 w25">    
+            <img src="/img/logo.jpg" class="h125px w125px logo auto">
+              </div>
+            <div class="wrapper column pd20 h100 w25">
+              <p class="fs24">Contact Information:</p>
+              <p class="mt20 fs18">Ohana Ice & Treats</p>
+              <p class="mt10 fs18">1800 W 103rd St</p>
+              <p class="mt-10 fs18">Chicago, IL</p>
+              <p class="mt-10 fs18">60643</p>
+              <p class="mt10 fs18">Phone: 773-253-8533</p>
+              <p class="mt-10 fs18">Email: ohanaiceandtreats@gmail.com</p>
+            </div>
+          </div>
+          <div class="wrapper colrow w50 auto space">
+            <div class="wrapper column pd20 h100 w25">
+              <p class="fs24">Site Navigation:</p>
+              <a class="fs18 mt20 white" href="index.html">Home</a>
+              <a class="fs18 mt10 white" href="menu.html">Menu</a>
+              <a class="fs18 mt10 white" href="gallery.html">Gallery</a>
+              <a class="fs18 mt10 white" href="schedule.html">Schedule</a>
+              <a class="fs18 mt10 white" href="about.html">About</a>
+              <a class="fs18 mt10 white" href="contact.html">Contact</a>
+            </div>
+            <div class="wrapper column pd20 h100 w25">
+              <p class="fs24">Keep In Touch With Us:</p>
+              <a class="fs18 mt20 white" href="https://www.facebook.com/OhanaIceChicago/" target="_blank"><img class="h25px auto" src="/img/icons/facebook-logo-500x500.png"> @OhanaIceChicago</a>
+              <a class="fs18 mt10 white" href="https://www.instagram.com/ohanaicechicago/?utm_source=ig_embed&hl=en" target="_blank"><img class="h25px auto" src="/img/icons/instagram-logo-500x500.png"> @ohanaicechicago</a>
+              <a class="fs18 mt10 white" href="https://www.tiktok.com/@ohanaiceandtreats" target="_blank"><img class="h25px auto" src="/img/icons/tiktok-logo-500x500.png"> @ohanaiceandtreats</a>
+          </div>
+          </div>
+        </div>
+      </footer>
+      <div class="loader-wrapper">
+          <img class="background" src="/img/backgrounds/site-background-faded.jpg" />
+          <img src="/img/logo.jpg" class="h175px w175px logo auto">
+      </div>
+    </body>
+  </html>

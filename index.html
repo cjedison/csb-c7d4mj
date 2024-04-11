@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ohana Ice & Treats</title>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <script src="/script/script.js" defer></script>
+    <script src="/script/trending.js" defer></script>
+    <script src="/script/products.js" defer></script>
+    <script src="/script/menu.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/contact.css" />
+    <link rel="stylesheet" href="/style/general.css" />
+    <link rel="stylesheet" href="/style/cst.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="nosel">
+    <!-- NAV -->
+
+    <div class="nav">
+      <div class="mobile-nav-menu-div">
+        <a
+          href="javascript:void(0);"
+          class="icon mobile-menu"
+          onclick="navFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <div class="nav-wrapper">
+        <div class="center logo-div">
+          <a href="index.html"
+            ><img src="img/cover.jpg" class="mobile-logo"
+          /></a>
+          <a href="index.html"
+            ><img src="img/logo.jpg" class="desktop-logo"
+          /></a>
+        </div>
+        <div class="desktop-nav">
+          <a href="index.html">HOME</a>
+          <a href="menu.html">MENU</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="schedule.html">SCHEDULE</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV LINKS -->
+
+    <div id="myLinks">
+      <a href="index.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="schedule.html">SCHEDULE</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+
+    <img class="background" src="/img/backgrounds/site-background-faded.jpg" />
+    <div class="home-page shadow">
+      <div>
+        <h2>=== Home ===</h2>
+        <div class="about-us-wrapper mt-10 frame palmb home-card">
+          <div class="about-us-div">
+            <img class="img-home" src="img/cover.jpg" />
+          </div>
+          <div class="about-us-div shadow">
+            <p class="blue">
+              Ohana Ice & Treats is a premier ice cream shop serving Chicago's
+              residents and visitors since 2018. With the most innovative shaved
+              ice options, an extensive menu of ice cream flavors, and vegan
+              options, we strive to create an environment that is comfortable
+              and welcoming for everyone. Whether you're looking for an
+              afterschool treat or a relaxing weekend outing with the family, we
+              want you to leave our shop with a smile after every visit. We're
+              looking forward to partnering with surrounding areas in order to
+              continue providing the community with the highest-quality ice
+              cream and best-tasting shaved ice in the city. We'd like to
+              personally invite you to stop by for one of our signature treats
+              today!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lb2 pd20 elipse">
+        <h2 class="desktop-header">=== Our Weekly Hours ===</h2>
+        <h2 class="mobile-header">Our Weekly Hours</h2>
+        <div
+          class="wrapper column space align w80 auto pd30 frame palmb-1 shadow"
+        >
+          <div class="row space hours">
+            <p class="blue">Sunday</p>
+            <p class="orange">1:00PM - 7:00PM</p>
+          </div>
+          <div class="row space hours">
+            <p class="blue">Monday</p>
+            <p class="orange">1:00PM - 7:00PM</p>
+          </div>
+          <div class="row space hours">
+            <p class="blue">Tuesday</p>
+            <p class="orange">1:00PM - 8:00PM</p>
+          </div>
+          <div class="row space hours">
+            <p class="blue">Wednesday</p>
+            <p class="orange">1:00PM - 8:00PM</p>
+          </div>
+          <div class="row space hours">
+            <p class="blue">Thursday</p>
+            <p class="orange">1:00PM - 8:00PM</p>
+          </div>
+          <div class="row space hours">
+            <p class="blue">Friday</p>
+            <p class="orange">1:00PM - 8:00PM</p>
+          </div>
+          <div class="row space hours">
+            <p class="blue">Saturday</p>
+            <p class="orange">1:00PM - 8:00PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class=" pd20">
+        <h2 class="desktop-header">=== Trending Ice Cream ===</h2>
+        <h2 class="mobile-header">Trending Ice Cream</h2>
+        <div id="trending-ice-cream" style="display: flex;"></div>
+      </div>
+    </div>
+
+    <div class=" pd20">
+      <h2 class="desktop-header">=== Trending Shaved Ice ===</h2>
+      <h2 class="mobile-header">Trending Shaved Ice</h2>
+      <div id="trending-shaved-ice" style="display: flex;"></div>
+    </div>
+  </div>
+
+    <footer>
+      <div class="footer wrapper w100 center mt50 align2">
+        <div class="wrapper colrow w50 auto space">
+            <div class="wrapper column pd20 auto2 w25">    
+          <img src="/img/logo.jpg" class="h125px w125px logo auto">
+            </div>
+          <div class="wrapper column pd20 h100 w25">
+            <p class="fs24">Contact Information:</p>
+            <p class="mt20 fs18">Ohana Ice & Treats</p>
+            <p class="mt10 fs18">1800 W 103rd St</p>
+            <p class="mt-10 fs18">Chicago, IL</p>
+            <p class="mt-10 fs18">60643</p>
+            <p class="mt10 fs18">Phone: 773-253-8533</p>
+            <p class="mt-10 fs18">Email: ohanaiceandtreats@gmail.com</p>
+          </div>
+        </div>
+        <div class="wrapper colrow w50 auto space">
+          <div class="wrapper column pd20 h100 w25">
+            <p class="fs24">Site Navigation:</p>
+            <a class="fs18 mt20 white" href="index.html">Home</a>
+            <a class="fs18 mt10 white" href="menu.html">Menu</a>
+            <a class="fs18 mt10 white" href="gallery.html">Gallery</a>
+            <a class="fs18 mt10 white" href="schedule.html">Schedule</a>
+            <a class="fs18 mt10 white" href="about.html">About</a>
+            <a class="fs18 mt10 white" href="contact.html">Contact</a>
+          </div>
+          <div class="wrapper column pd20 h100 w25">
+            <p class="fs24">Keep In Touch With Us:</p>
+            <a class="fs18 mt20 white" href="https://www.facebook.com/OhanaIceChicago/" target="_blank"><img class="h25px auto" src="/img/icons/facebook-logo-500x500.png"> @OhanaIceChicago</a>
+            <a class="fs18 mt10 white" href="https://www.instagram.com/ohanaicechicago/?utm_source=ig_embed&hl=en" target="_blank"><img class="h25px auto" src="/img/icons/instagram-logo-500x500.png"> @ohanaicechicago</a>
+            <a class="fs18 mt10 white" href="https://www.tiktok.com/@ohanaiceandtreats" target="_blank"><img class="h25px auto" src="/img/icons/tiktok-logo-500x500.png"> @ohanaiceandtreats</a>
+        </div>
+        </div>
+      </div>
+    </footer>
+    <div class="loader-wrapper">
+        <img class="background" src="/img/backgrounds/site-background-faded.jpg" />
+        <img src="/img/logo.jpg" class="h175px w175px logo auto">
+    </div>
+  </body>
+</html>
